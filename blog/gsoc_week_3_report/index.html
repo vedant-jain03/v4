@@ -248,31 +248,50 @@ data-styled.g43[id="post__StyledPostContent-sc-8858gx-2"]{content:"cQuEIi,"}/*!s
 <p>It's been a month in the GSoC environment with CircuitVerse and it's great so far.
 This week I did the following:</p>
 <ul>
-<li>Fixes the conflicts of <code class="language-text">Support Multiple Mentors</code> <a href="https://github.com/CircuitVerse/CircuitVerse/pull/2096" target="_blank" rel="nofollow noopener noreferrer">PR</a>.</li>
-<li>Worked on <code class="language-text">Improve Embed Feature</code> <a href="https://github.com/CircuitVerse/CircuitVerse/pull/2768" target="_blank" rel="nofollow noopener noreferrer">PR</a>.</li>
-<li>Reviewed and discussed the UI of all the features.
+<li>
+<p>Fixes the conflicts of <code class="language-text">Support Multiple Mentors</code> <a href="https://github.com/CircuitVerse/CircuitVerse/pull/2096" target="_blank" rel="nofollow noopener noreferrer">PR</a>.</p>
+</li>
+<li>
+<p>Worked on <code class="language-text">Improve Embed Feature</code> <a href="https://github.com/CircuitVerse/CircuitVerse/pull/2768" target="_blank" rel="nofollow noopener noreferrer">PR</a>.</p>
+</li>
+<li>
+<p>Reviewed and discussed the UI of all the features.
 <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8o3g9owkdgpkh452n4dy.png" alt="Image description">
 The previous week, I have done with the requested functionality of the PR <code class="language-text">Support Multiple Mentors</code> but after one commit merged into master, there was a lot of <code class="language-text">RoboCup</code> conflicting with the files of this PR. Hence, I solved them and was able to fix all the conflicting files. The PR is almost ready and now we are checking its feasibility with CircuitVerse Mobile-App.
-This week, I worked on the PR by Kartikay(contributor) for <code class="language-text">Improve Embed Feature</code>. Check out the description of the feature <a href="https://github.com/CircuitVerse/CircuitVerse/issues/1938" target="_blank" rel="nofollow noopener noreferrer">here</a>. I have worked on:</li>
-<li>Improving the existing UI.</li>
-<li>Some typos.</li>
-<li>Implement popup in form of Rails <a href="https://viewcomponent.org/" target="_blank" rel="nofollow noopener noreferrer">Component</a> view.</li>
-<li>Added translation.</li>
-<li>added and transfer the code to project_controller(stimulus).</li>
-<li>Added Advance feature to enable/disable:
+This week, I worked on the PR by Kartikay(contributor) for <code class="language-text">Improve Embed Feature</code>. Check out the description of the feature <a href="https://github.com/CircuitVerse/CircuitVerse/issues/1938" target="_blank" rel="nofollow noopener noreferrer">here</a>. I have worked on:</p>
+</li>
+<li>
+<p>Improving the existing UI.</p>
+</li>
+<li>
+<p>Some typos.</p>
+</li>
+<li>
+<p>Implement popup in form of Rails <a href="https://viewcomponent.org/" target="_blank" rel="nofollow noopener noreferrer">Component</a> view.</p>
+</li>
+<li>
+<p>Added translation.</p>
+</li>
+<li>
+<p>added and transfer the code to project_controller(stimulus).</p>
+</li>
+<li>
+<p>Added Advance feature to enable/disable:
  - Zoom-in-out feature
  - Fullscreen button
  - Clock/Time button
- - Display Title</li>
-<li>Added feature to choose different built-in themes for embed circuit.
+ - Display Title</p>
+</li>
+<li>
+<p>Added feature to choose different built-in themes for embed circuit.
 It looks like this:
-<img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/yi35g1gdujqzxbdkomo9.png" alt="Image description">
+<img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/yi35g1gdujqzxbdkomo9.png" alt="Image description"></p>
 <blockquote>
-<p>Advance Option
-<img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5qeqsamwbpuipnuxdnhs.png" alt="Image description">
-So, how it is working?
-CircuitVerse awesome contributors have made <code class="language-text">embed.js</code> and <code class="language-text">embedListener.js</code> files for tackling with the <code class="language-text">embed</code> feature. So I have made some input fields with default values in component views which are connected to data-controller=projects and in <code class="language-text">projects_controller</code> I have to write code to get the value from those input fields and after the user hits that <code class="language-text">Publish</code> button, the function in controller takes the values from each input and save it to the variable and finally made a <code class="language-text">URL</code> variable along with <code class="language-text">query parameters</code> passed to fetch the values in <code class="language-text">embed.js</code>. The URL looks like this:</p>
+<p>Advance Option</p>
 </blockquote>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5qeqsamwbpuipnuxdnhs.png" alt="Image description"></p>
+<p>So, how it is working?
+CircuitVerse awesome contributors have made <code class="language-text">embed.js</code> and <code class="language-text">embedListener.js</code> files for tackling with the <code class="language-text">embed</code> feature. So I have made some input fields with default values in component views which are connected to data-controller=projects and in <code class="language-text">projects_controller</code> I have to write code to get the value from those input fields and after the user hits that <code class="language-text">Publish</code> button, the function in controller takes the values from each input and save it to the variable and finally made a <code class="language-text">URL</code> variable along with <code class="language-text">query parameters</code> passed to fetch the values in <code class="language-text">embed.js</code>. The URL looks like this:</p>
 </li>
 </ul>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">const url = `${document.querySelector('#url').value}?theme=${theme}&amp;display_title=${displayTitle}&amp;clock_time=${clockTimeEnable}&amp;fullscreen=${fullscreen}&amp;zoom_in_out=${zoomInOut}`;</code></pre></div>
