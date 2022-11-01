@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tag-js",
+    "path": "/blog/tags/open-source/",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"How I got selected for MLH-Fellowship","description":"MLH Fellowship also started with Prep Program. MLH Fellowship Prep Program is a 3-week preparation program for aspiring technologists interested in experiencing the fellowship before committing to the full 12 weeks.","date":"2022-11-01T00:00:00.000Z","slug":"/blog/how_i_got_selected_for_mlh_prep_fellowship","tags":["Open Source","Fellowship"]}}}]}},"pageContext":{"tag":"Open Source"}},
+    "staticQueryHashes": ["1481993802","1994492073","3391063840","604461682"]}
