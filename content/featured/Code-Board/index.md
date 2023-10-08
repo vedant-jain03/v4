@@ -1,13 +1,15 @@
 ---
 date: '2'
-title: 'Juket'
-cover: './demo.jpeg'
-external: 'https://www.figma.com/proto/P8K8ZoxlZWWCVefvTQu02m/juket?page-id=0%3A1&node-id=1-2&mode=design&t=hMsQZS8HKqxY2EzR-1'
+title: 'Code-Board'
+cover: './demo.png'
+github: 'https://github.com/vedant-jain03/code-board'
+external: 'https://code-board.onrender.com/'
 tech:
-  - Figma
-  - Wireframe
-  - Prototyping
+  - React
+  - Express.js
+  - Socket.io
+  - Axios
 showInProjects: true
 ---
 
-Discover how I transformed the web experience for Juket, a music streaming platform, into an engaging and intuitive journey for music enthusiasts.
+A simple real-time code collaboration platform for coding class with compiler compatibility in 5 languages.
